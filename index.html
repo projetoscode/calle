@@ -10,10 +10,8 @@
 <meta property="og:title" content="CALLE — Moda Feminina Autoral">
 <meta property="og:description" content="Boutique de moda feminina em Campo Mourão, PR. Peças autorais e atendimento personalizado.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://projetoscode.github.io/calle/">
-<meta property="og:image" content="https://projetoscode.github.io/calle/assets/img/img14.jpg">
+<meta property="og:image" content="assets/img/img14.jpg">
 <meta property="og:locale" content="pt_BR">
-<meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
@@ -35,11 +33,8 @@
 
 <header class="site-header">
   <button class="pill-btn menu-btn" id="menuOpen" aria-haspopup="true" aria-expanded="false" aria-controls="menuOverlay">MENU</button>
-  <a href="#home" class="pill-btn logo-badge" aria-label="CALLE — início">CALLE</a>
-  <a class="pill-btn header-cta" href="https://wa.me/5544991130901" target="_blank" rel="noopener">
-    <span class="header-cta__full">Comprar no <strong>WHATSAPP</strong></span>
-    <span class="header-cta__short">WhatsApp</span>
-  </a>
+  <a href="#home" class="logo-badge" aria-label="CALLE — início">CALLE</a>
+  <a class="pill-btn header-cta" href="https://wa.me/5544991130901" target="_blank" rel="noopener">Comprar no <strong>WHATSAPP</strong></a>
 </header>
 
 <nav id="menuOverlay" class="menu-overlay" aria-hidden="true">
@@ -58,10 +53,10 @@
       <p class="menu-contact__addr">Av. José Custódio de Oliveira, 1219<br>Campo Mourão, PR</p>
     </div>
     <div class="menu-legal">
-      <button type="button" class="menu-link menu-link--small" data-modal="faq">FAQ</button>
-      <button type="button" class="menu-link menu-link--small" data-modal="creditos">Créditos</button>
-      <button type="button" class="menu-link menu-link--small" data-modal="termos">Termos &amp; Condições</button>
-      <button type="button" class="menu-link menu-link--small" data-modal="privacidade">Política de Privacidade</button>
+      <a href="#faq" class="menu-link menu-link--small">FAQ</a>
+      <a href="#creditos" class="menu-link menu-link--small">Créditos</a>
+      <a href="#termos" class="menu-link menu-link--small">Termos &amp; Condições</a>
+      <a href="#privacidade" class="menu-link menu-link--small">Política de Privacidade</a>
     </div>
   </div>
 </nav>
@@ -104,9 +99,7 @@
   </section>
 
   <section class="fullbleed">
-    <video class="fullbleed__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/img06.jpg" aria-label="Vídeo: mulher caminhando com look CALLE">
-      <source src="assets/video/street.mp4" type="video/mp4">
-    </video>
+    <img src="assets/img/img06.jpg" alt="Mulher usando conjunto verde-sálvia bordado em arquitetura branca" loading="lazy">
     <div class="fullbleed__scrim"></div>
     <h2 class="fullbleed__caption">Do LOOK, <em>à</em> HISTÓRIA, <em>à</em> ATITUDE.</h2>
   </section>
@@ -227,10 +220,10 @@
   </div>
 
   <div class="footer-legal">
-    <button type="button" data-modal="termos">Termos &amp; Condições</button>
-    <button type="button" data-modal="privacidade">Política de Privacidade</button>
-    <button type="button" data-modal="acessibilidade">Acessibilidade</button>
-    <button type="button" data-modal="creditos">Créditos</button>
+    <a href="#termos">Termos &amp; Condições</a>
+    <a href="#privacidade">Política de Privacidade</a>
+    <a href="#acessibilidade">Acessibilidade</a>
+    <a href="#creditos">Créditos</a>
   </div>
 
   <div class="seo-block">
@@ -244,57 +237,6 @@
 
   <p class="footer-bottom">© <span id="year"></span> CALLE. Todos os direitos reservados.</p>
 </footer>
-
-<div class="modal-overlay" id="modalOverlay" hidden>
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button type="button" class="modal__close" id="modalClose" aria-label="Fechar">&times;</button>
-    <h2 class="modal__title" id="modalTitle"></h2>
-    <div class="modal__body" id="modalBody"></div>
-  </div>
-</div>
-
-<template id="modal-faq">
-  <h2 data-title>Perguntas frequentes</h2>
-  <div data-body>
-    <p><strong>Como faço um pedido?</strong><br>Fale com a gente pelo WhatsApp — respondemos com fotos, tamanhos e disponibilidade das peças na hora.</p>
-    <p><strong>Vocês trocam ou fazem devolução?</strong><br>Sim. Você tem até 7 dias após o recebimento para solicitar troca, com a peça sem uso e com etiqueta.</p>
-    <p><strong>Fazem entrega fora de Campo Mourão?</strong><br>Sim, enviamos para todo o Brasil. Combine o frete e o prazo diretamente pelo WhatsApp.</p>
-    <p><strong>Posso visitar a loja física?</strong><br>Claro! Estamos na Av. José Custódio de Oliveira, 1219, Campo Mourão — PR.</p>
-  </div>
-</template>
-
-<template id="modal-termos">
-  <h2 data-title>Termos &amp; Condições</h2>
-  <div data-body>
-    <p>Ao comprar na CALLE, as condições de pagamento, prazos e trocas são combinadas diretamente pelo WhatsApp antes da confirmação do pedido. As imagens das peças são meramente ilustrativas e podem apresentar pequenas variações de cor conforme o dispositivo utilizado.</p>
-    <p>O uso deste site pressupõe a concordância com estas condições básicas de relacionamento comercial com a CALLE.</p>
-  </div>
-</template>
-
-<template id="modal-privacidade">
-  <h2 data-title>Política de Privacidade</h2>
-  <div data-body>
-    <p>A CALLE respeita a sua privacidade. Os dados compartilhados por você durante o atendimento (nome, telefone, endereço de entrega) são usados exclusivamente para viabilizar a sua compra e não são vendidos ou repassados a terceiros.</p>
-    <p>Este site não utiliza cookies de rastreamento nem formulários que armazenem dados automaticamente.</p>
-  </div>
-</template>
-
-<template id="modal-acessibilidade">
-  <h2 data-title>Acessibilidade</h2>
-  <div data-body>
-    <p>Buscamos tornar este site utilizável por todas as pessoas: navegação por teclado, textos alternativos nas imagens, contraste cuidado entre texto e fundo e respeito à preferência por movimento reduzido do seu sistema.</p>
-    <p>Encontrou alguma barreira de acessibilidade? Conte para a gente pelo WhatsApp.</p>
-  </div>
-</template>
-
-<template id="modal-creditos">
-  <h2 data-title>Créditos</h2>
-  <div data-body>
-    <p>Fotografia e vídeo: acervo próprio CALLE.</p>
-    <p>Direção de criação e desenvolvimento do site: equipe CALLE.</p>
-    <p>Tipografia: Cormorant Garamond e Jost (Google Fonts).</p>
-  </div>
-</template>
 
 <script src="js/script.js"></script>
 </body>
