@@ -291,6 +291,7 @@ em{ font-style:italic; font-weight:400; }
   line-height:1.1;
 }
 .fullbleed--mono img{ filter:grayscale(1) contrast(1.05); }
+.fullbleed--focus-body img{ object-position:center 62%; }
 .fullbleed__caption--dark{ color:var(--grey-300); }
 
 /* =========================================================
